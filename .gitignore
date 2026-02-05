@@ -1,0 +1,20 @@
+# Claude Code 에디터 개인 설정
+.claude/settings.local.json
+
+# Windows 빌드 산물
+nul
+
+# 운영 체제 파일
+.DS_Store
+Thumbs.db
+
+# IDE/에디터 설정 (향후 확장 대비)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 환경 파일 (향후 확장 대비)
+.env
+.env.local
+.env.*.local

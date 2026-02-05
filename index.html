@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이태헌 | 게임 프로그래머</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans h-screen overflow-hidden flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-gray-900 via-purple-900/30 to-gray-900 py-12 px-6 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto text-center flex flex-col items-center">
+            <h1 class="text-4xl md:text-5xl font-bold opacity-0 animate-fade-in-up mb-3">이태헌</h1>
+            <span class="text-purple-400 text-xl md:text-2xl font-medium opacity-0 animate-fade-in-up animate-delay-1 mb-4">게임 클라이언트/서버 프로그래머</span>
+            <p class="text-gray-400 text-lg opacity-0 animate-fade-in-up animate-delay-2">프로젝트의 개발 효율성을 위해 열심히 노력 중!</p>
+        </div>
+    </header>
+
+    <!-- Skills -->
+    <section class="py-4 px-6 border-b border-gray-800 bg-gray-800/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center justify-center gap-4 flex-wrap opacity-0 animate-fade-in-up animate-delay-2">
+                <span class="text-gray-400 font-medium">Skills:</span>
+                <span class="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-sm font-semibold">Unity</span>
+                <span class="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-sm font-semibold">C#</span>
+                <span class="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-sm font-semibold">C++</span>
+                <span class="px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-sm font-semibold">Git</span>
+                <span class="px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-sm font-semibold">Networking</span>
+                <span class="px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full text-sm font-semibold">Multiplayer</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <main class="flex-1 overflow-auto py-6 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 text-center opacity-0 animate-fade-in-up animate-delay-2">Projects</h2>
+            <div class="grid md:grid-cols-3 gap-4 opacity-0 animate-fade-in-up animate-delay-3">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/80 transition-colors border border-gray-700">
+                    <h3 class="text-lg font-bold mb-3 text-purple-400">모바일 RPG 게임</h3>
+                    <p class="text-gray-400 text-sm mb-4">실시간 전투 시스템과 인벤토리 관리 기능을 갖춘 모바일 RPG 클라이언트 개발</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 bg-gray-900 rounded-full text-gray-300">Unity</span>
+                        <span class="text-xs px-3 py-1 bg-gray-900 rounded-full text-gray-300">C#</span>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/80 transition-colors border border-gray-700">
+                    <h3 class="text-lg font-bold mb-3 text-purple-400">실시간 멀티플레이 서버</h3>
+                    <p class="text-gray-400 text-sm mb-4">고성능 게임 서버 구축 및 네트워크 동기화 시스템 개발</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 bg-gray-900 rounded-full text-gray-300">C++</span>
+                        <span class="text-xs px-3 py-1 bg-gray-900 rounded-full text-gray-300">Networking</span>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/80 transition-colors border border-gray-700">
+                    <h3 class="text-lg font-bold mb-3 text-purple-400">게임 개발 도구</h3>
+                    <p class="text-gray-400 text-sm mb-4">개발 효율성 향상을 위한 에디터 확장 및 자동화 도구 제작</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 bg-gray-900 rounded-full text-gray-300">Unity Editor</span>
+                        <span class="text-xs px-3 py-1 bg-gray-900 rounded-full text-gray-300">C#</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/50 py-4 px-6 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-sm">
+            <div class="flex items-center gap-2 text-gray-400">
+                <span>Contact:</span>
+                <a href="mailto:asdf@asdf.asd" class="text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    asdf@asdf.asd
+                </a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 이태헌. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
